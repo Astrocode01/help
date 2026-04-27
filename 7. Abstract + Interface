@@ -1,3 +1,5 @@
+//Abstract
+
 abstract class Animal {
     abstract void sound();
 }
@@ -5,5 +7,16 @@ abstract class Animal {
 class Dog extends Animal {
     void sound() {
         System.out.println("Bark");
+    }
+}
+
+//Interface
+interface Vehicle {
+    void drive();
+}
+
+class Car implements Vehicle {
+    public void drive() {
+        System.out.println("Car is driving");
     }
 }
